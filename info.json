@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Muestras de Proceso · Musicala",
+    "subtitle": "Espacio práctico para docentes: qué es una muestra de proceso, cómo se organiza mes a mes, la ruta por área y el valor de los puchitos (fragmentos/bocetos) 🎭🎶🖌️💃"
+  },
+
+  "intro": {
+    "items": [
+      { "label": "Muestras mensuales", "text": "En todas las áreas realizamos una instancia breve para visibilizar el aprendizaje en curso." },
+      { "label": "Participación de familias", "text": "Son público pedagógico: puente para explicar criterios y metas y ver a cada estudiante." },
+      { "label": "Formato abierto", "text": "Se valoran puchitos (fragmentos), bocetos y pruebas: el proceso se vuelve visible." }
+    ]
+  },
+
+  "concepto": {
+    "items": [
+      "Que el/la estudiante comparta su proceso más allá del resultado final.",
+      "Que practique el encuentro con público y habitar la escena con cuidado.",
+      "Que ejercite la comunicación artística: presentar obra, objetivos y decisiones.",
+      "Que el feedback sea breve, específico y oriente el siguiente paso."
+    ]
+  },
+
+  "fases": {
+    "items": [
+      { "label": "Grabaciones de audio", "text": "micro-tomas (1–3 min) guiadas por objetivos técnicos y musicales." },
+      { "label": "Grabaciones en video", "text": "registro de ensayos, dúos o ensambles; encuadre, luz y sonido básicos." },
+      { "label": "Recitales / micro-muestras internas", "text": "piezas breves presentadas por el/la estudiante (obra, autor/a, objetivo)." },
+      { "label": "Eventos internos con público", "text": "apertura a familias y comunidad; se explica el proceso y se observa a cada estudiante." },
+      { "label": "Conciertos / funciones", "text": "participación en muestras abiertas o aliadas; mayor producción y público." }
+    ],
+    "note": "La ruta aplica a todas las artes y formatos (canciones, ensambles, solistas; escenas, coreografías, galerías, etc.)."
+  },
+
+  "context": {
+    "items": [
+      { "label": "Mensuales", "text": "en todos los programas artísticos." },
+      { "label": "Horarios", "text": "durante la clase o en franjas alternas según disponibilidad y objetivos." }
+    ],
+    "note": "Si la muestra es abierta a familias o público, confirmar permisos de imagen y manejo de registros (fotos/videos)."
+  },
+
+  "preparacion": {
+    "items": [
+      "Elige la fase que harás este mes (audio, video, recital, evento o concierto).",
+      "Define el formato según el área (canciones, ensambles, solistas o equivalente).",
+      "Aclara criterios de observación y objetivos de aprendizaje.",
+      "Involucra a familias como público y explícales el enfoque de proceso.",
+      "Registra acuerdos y evidencias representativas (puchitos con contexto breve) para la siguiente muestra."
+    ],
+    "note": "Mensualmente se muestra lo trabajado. No importa si varias/os presentan la misma obra: lo clave es participar, explicar el proceso y ver a cada estudiante."
+  },
+
+  "repertorio": {
+    "text": "Ver repertorio del Musicala Fest 2025",
+    "link": "#"
+  },
+
+  "areas": [
+    {
+      "id": "musica",
+      "name": "Música",
+      "emoji": "🎵",
+      "items": [
+        { "label": "Sesiones de grabación de audio", "text": "micro-tomas (puchitos) por objetivos de técnica, ritmo y afinación." },
+        { "label": "Sesiones de video", "text": "registro de ensayos, dúos/ensambles; encuadre, luz y sonido cuidados." },
+        { "label": "Recitales internos", "text": "piezas breves presentadas por el/la estudiante (obra, autor/a, objetivo)."},
+        { "label": "Clases abiertas", "text": "familias observan un tramo con foco en el proceso, no en el show." },
+        { "label": "Eventos / conciertos", "text": "participación en muestras programadas por Musicala o aliados." }
+      ]
+    },
+    {
+      "id": "plastica",
+      "name": "Artes Plásticas",
+      "emoji": "🖌️",
+      "items": [
+        { "label": "Galerías efímeras", "text": "montaje en sede con fichas de obra, objetivo y técnica." },
+        { "label": "Galería virtual", "text": "fotos de proceso (bocetos → versiones) y descripción breve; QR en sala." },
+        { "label": "Clases abiertas", "text": "estaciones de trabajo para observar/participar en micro-actividades." },
+        { "label": "Murales colectivos", "text": "diseño colaborativo; roles por secciones y registro del proceso." },
+        { "label": "Conversatorios", "text": "breve sobre referentes, color, composición y mensaje." }
+      ]
+    },
+    {
+      "id": "danza",
+      "name": "Danza",
+      "emoji": "💃",
+      "items": [
+        { "label": "Ensayo abierto", "text": "público observa calentamiento, frases y limpieza." },
+        { "label": "Frase coreográfica", "text": "30–90 s por grupo o dúo con foco en musicalidad y transiciones." },
+        { "label": "Laboratorio de improvisación", "text": "consignas: niveles, direcciones y calidades de movimiento." },
+        { "label": "Clases abiertas", "text": "familias ingresan a un tramo acotado de la clase." },
+        { "label": "Muestras por estilo", "text": "folclor, urbano, contemporáneo con breve contexto cultural." }
+      ]
+    },
+    {
+      "id": "teatro",
+      "name": "Teatro",
+      "emoji": "🎭",
+      "items": [
+        { "label": "Lecturas dramatizadas", "text": "texto en mano; trabajo de intención, ritmo y proyección." },
+        { "label": "Microescenas", "text": "1–3 min con objetivos actorales claros (escucha, acción, conflicto)." },
+        { "label": "Impro breve", "text": "juegos de estatus, “sí y…”, creación en dúos/tríos." },
+        { "label": "Teatro foro", "text": "escena corta + intervención del público." },
+        { "label": "Clases abiertas", "text": "calentamiento corporal/vocal y dinámica teatral compartida." }
+      ]
+    }
+  ],
+
+  "retro": {
+    "items": [
+      { "label": "Encuestas", "text": "formulario breve para familias y/o estudiantes." },
+      { "label": "Informes", "text": "bitácora docente con criterios y acuerdos por grupo/estudiante." },
+      { "label": "Evidencias de audio", "text": "puchitos de avance (1–3 min) con objetivo claro." },
+      { "label": "Evidencias de video", "text": "registro de ensayos / fragmentos representativos (no todo)." }
+    ]
+  }
+}

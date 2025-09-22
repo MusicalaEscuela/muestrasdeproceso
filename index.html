@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Muestras de Proceso · Musicala</title>
+  <meta name="description" content="Espacio práctico para docentes: qué es una muestra de proceso, cómo se organiza mes a mes y la ruta de avances por cada área artística." />
+  <meta name="theme-color" content="#7c5cff" />
+
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preload" as="fetch" href="info.json" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Overrides ligeros: contraste, pasos enumerados, callouts y header no fijo/sin degradé -->
+  <style>
+    /* Mejor contraste (modo claro) */
+    :root{ --text:#111528; --text-dim:#2a2f55; }
+    /* Mejor contraste en dark */
+    @media (prefers-color-scheme: dark){
+      :root{ --text:#f2f4ff; --text-dim:#d7dbff; }
+      .grid li{ border-color:rgba(255,255,255,.14); }
+    }
+
+    /* Header: NO fijo y sin degradé en el título */
+    .site-header{ position: static !important; background: transparent !important; }
+    .titles h1{
+      background: none !important;
+      -webkit-background-clip: initial !important;
+      background-clip: initial !important;
+      color: var(--text) !important; /* texto sólido */
+    }
+
+    /* Ruta numerada reutilizable */
+    .steps{ counter-reset: paso; }
+    .steps li::before{
+      counter-increment: paso;
+      content: counter(paso);
+      font-weight: 800;
+      color:#fff;
+      background:linear-gradient(180deg,#00e0b8,#00c7a3);
+      border:0;
+    }
+
+    /* Callout de “formato abierto” */
+    .callout{
+      margin-top:8px; padding:12px 14px; border-radius:12px;
+      background:rgba(255,209,102,.12); border:1px solid rgba(255,209,102,.45);
+    }
+
+    /* Unir ruta + áreas */
+    #ruta-wrapper .sub{ margin:14px 0 6px; font-weight:800; color:var(--text); }
+  </style>
+</head>
+<body>
+  <a class="skiplink" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado -->
+  <header class="site-header" role="banner" aria-label="Encabezado">
+    <div class="wrap">
+      <img class="brand" src="logo.png" alt="Musicala" height="64" />
+      <div class="titles">
+        <h1 id="site-title">Muestras de Proceso · Musicala</h1>
+        <p id="site-subtitle" class="subtitle">
+          Profe, este espacio es para ti 🫶. Aquí explicamos qué es una <strong>muestra de proceso</strong>, por qué la hacemos cada mes
+          y cómo llevarla según tu área (música, danza, artes plásticas o teatro). No buscamos “show”, sino <em>visibilizar aprendizaje</em>,
+          compartir decisiones artísticas y fortalecer el encuentro con público.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="site-main" role="main">
+
+    <!-- INTRO -->
+    <section id="intro" class="card" aria-labelledby="intro-title">
+      <h2 id="intro-title"><span class="dot"></span>Introducción</h2>
+
+      <p style="margin:0 0 12px">
+        Las <strong>muestras de proceso</strong> son un momento mensual, breve y formativo, en el que cada estudiante comparte
+        <em>cómo va</em>: lo que ha trabajado, los criterios que está aplicando y el paso que sigue. Las familias son público
+        pedagógico: buscamos tender puentes y acompañar, no perseguir la perfección.
+      </p>
+
+      <ul id="intro-list" class="grid">
+        <li><strong>Muestras mensuales:</strong> <span>en todos los programas artísticos.</span></li>
+        <li><strong>Participación de familias:</strong> <span>público principal para explicar criterios y ver a cada estudiante.</span></li>
+        <li><strong>Formato abierto:</strong> <span>se valoran <em>puchitos</em> (fragmentos), bocetos y pruebas: el proceso se vuelve visible.</span></li>
+      </ul>
+
+      <div class="callout" id="formato-abierto-extra" role="note" aria-label="Explicación de formato abierto">
+        <strong>¿Qué significa “formato abierto”?</strong><br>
+        Se admiten <em>puchitos</em> —pedacitos o fragmentos—, bocetos y pruebas. El/la estudiante puede contar qué intentó,
+        qué funcionó y qué mejorará. Valoramos la honestidad del proceso, la comunicación artística y la participación.
+      </div>
+    </section>
+
+    <!-- RUTA + ÁREAS (unidas) -->
+    <section id="ruta-wrapper" class="card" aria-labelledby="fases-title">
+      <h2 id="fases-title"><span class="dot"></span>Ruta de muestras por área (de lo simple a lo grande)</h2>
+
+      <!-- Ruta en pasos numerados -->
+      <ol id="fases-list" class="grid steps">
+        <li><strong>Grabaciones de audio</strong> <span>— micro-tomas (1–3 min) guiadas por objetivos.</span></li>
+        <li><strong>Grabaciones en video</strong> <span>— registro de ensayos/duetos/ensambles con checklist básico.</span></li>
+        <li><strong>Recitales / micro-muestras internas</strong> <span>— piezas breves presentadas por el propio estudiante.</span></li>
+        <li><strong>Eventos internos con público</strong> <span>— familias y amigos como audiencia formativa.</span></li>
+        <li><strong>Conciertos / funciones</strong> <span>— participación en muestras abiertas o alianzas.</span></li>
+      </ol>
+      <div class="note" id="fases-note">
+        Aplica para todas las artes y formatos (canciones, ensambles, solistas; escenas, coreografías, galerías, etc.).
+      </div>
+
+      <!-- Tabs de áreas -->
+      <p class="sub">Elige tu área para ver cómo se aterriza la ruta:</p>
+      <nav id="tablist" class="tabs" role="tablist" aria-label="Áreas artísticas"></nav>
+
+      <!-- Paneles de cada área -->
+      <section id="panels" class="panels">
+        <div class="skeleton">
+          <div class="sk-line"></div>
+          <div class="sk-line short"></div>
+          <div class="sk-card"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FRECUENCIA (sin “formatos posibles” ni “propósito”) -->
+    <section id="contexto" class="card" aria-labelledby="ctx-title">
+      <h2 id="ctx-title"><span class="dot"></span>Frecuencia y dinámica general</h2>
+      <ul id="ctx-list" class="grid"></ul>
+      <div id="ctx-note" class="note" hidden></div>
+    </section>
+
+    <!-- PREPARACIÓN DOCENTE -->
+    <section id="preparacion" class="card" aria-labelledby="prep-title">
+      <h2 id="prep-title"><span class="dot"></span>Preparación docente mensual</h2>
+      <ul id="prep-list" class="grid">
+        <li><span>Elige la fase del mes (audio / video / recital / evento).</span></li>
+        <li><span>Define formato según el área (canciones, ensambles, solistas o equivalente).</span></li>
+        <li><span>Declara criterios y objetivos; registra acuerdos para el siguiente mes.</span></li>
+        <li><span>Invita a familias como público y explícales el enfoque de proceso.</span></li>
+        <li><span>Curaduría: evidencias representativas (no todo) con contexto breve.</span></li>
+      </ul>
+      <div class="note" id="prep-note">
+        Mensualmente se muestra lo trabajado. No importa si varias/os presentan la misma obra: lo clave es participar,
+        explicar el proceso y ver a cada estudiante.
+      </div>
+    </section>
+
+    <!-- REPERTORIO MUSICALA FEST 2025 -->
+    <section id="repertorio" class="card" aria-labelledby="rep-title">
+      <h2 id="rep-title"><span class="dot"></span>Repertorio Musicala Fest 2025</h2>
+      <ul class="grid">
+        <li id="rep-text">
+          <span>
+            Para el <strong>Musicala Fest 2025</strong> usamos una lista de repertorio específica para este evento.
+            En las <strong>muestras de proceso</strong> se pueden trabajar obras de esa lista o cualquier otra pieza
+            alineada con los objetivos del curso.
+          </span>
+        </li>
+      </ul>
+      <p class="center" style="margin-top:12px">
+        <a id="btn-repertorio" href="#" target="_blank" rel="noopener" class="button">Ver repertorio del Musicala Fest 2025</a>
+      </p>
+    </section>
+
+    <!-- RETRO Y SEGUIMIENTO: encuestas, informes, audios y videos -->
+    <section id="retro" class="card" aria-labelledby="retro-title">
+      <h2 id="retro-title"><span class="dot"></span>Retroalimentación y seguimiento</h2>
+      <ul id="retro-list" class="grid">
+        <li><strong>Encuestas:</strong> <span>formulario breve para familias y/o estudiantes.</span></li>
+        <li><strong>Informes:</strong> <span>bitácora docente con criterios y acuerdos por grupo/estudiante.</span></li>
+        <li><strong>Evidencias de audio:</strong> <span>micro-tomas (1–3 min) con objetivo claro.</span></li>
+        <li><strong>Evidencias de video:</strong> <span>registro de ensayos/fragmentos representativos (no todo).</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p class="muted">¿Sugerencias para mejorar este proceso? Escríbenos 💌</p>
+    <p>© <span id="year"></span> Musicala · Escuela de Artes Integrales</p>
+  </footer>
+
+  <noscript>
+    <div class="noscript">
+      Esta página necesita JavaScript para cargar el contenido dinámico. Actívalo para ver la información completa.
+    </div>
+  </noscript>
+
+  <!-- App principal -->
+  <script src="script.js" type="module"></script>
+
+  <!-- Post-tweaks: ocultar bloques que pidieron quitar y numerar por área si fuera necesario -->
+  <script>
+    // Año en footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const readyPanels = () => {
+      // 1) Quitar h3 y listas de logística/cuidado
+      document.querySelectorAll('#panels [role="tabpanel"]').forEach(panel => {
+        panel.querySelectorAll('h3').forEach(h3 => {
+          const t = h3.textContent.trim().toLowerCase();
+          if (t.includes('logística y roles') || t.includes('logística, seguridad') || t.includes('cuidado escénico') || t.includes('cuidado')) {
+            const ul = h3.nextElementSibling;
+            h3.remove(); if (ul && ul.matches('ul')) ul.remove();
+          }
+        });
+        // 2) Eliminar details “Musibabies/Musicalitos/Musikids” o “primeros niveles”
+        panel.querySelectorAll('details > summary').forEach(s => {
+          const tt = s.textContent.toLowerCase();
+          if (tt.includes('musibabies') || tt.includes('musicalitos') || tt.includes('musikids') || tt.includes('primeros niveles')) {
+            s.parentElement.remove();
+          }
+        });
+        // 3) Asegurar numeración en la lista principal de cada área
+        const firstList = panel.querySelector('ul.grid');
+        if (firstList) {
+          const ol = document.createElement('ol');
+          ol.className = 'grid steps';
+          ol.innerHTML = firstList.innerHTML;
+          firstList.replaceWith(ol);
+        }
+      });
+
+      // 4) En “Frecuencia” quitar elementos con label “Formatos posibles” o “Propósito”
+      document.querySelectorAll('#contexto .grid li').forEach(li => {
+        const b = li.querySelector('strong'); const label = b ? b.textContent.toLowerCase() : '';
+        if (label.includes('formatos posibles') || label.includes('propósito')) li.remove();
+      });
+    };
+
+    // Observa hasta que existan paneles creados por script.js
+    const mo = new MutationObserver((_, obs) => {
+      if (document.querySelector('#panels [role="tabpanel"]')) { readyPanels(); obs.disconnect(); }
+    });
+    mo.observe(document.documentElement, { childList:true, subtree:true });
+
+    // Fallback
+    setTimeout(() => {
+      if (document.querySelector('#panels [role="tabpanel"]')) readyPanels();
+    }, 2000);
+  </script>
+</body>
+</html>
