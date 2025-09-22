@@ -53,7 +53,7 @@
 
   "repertorio": {
     "text": "Ver repertorio del Musicala Fest 2025",
-    "link": "#"
+    "link": "https://musicalaescuela.github.io/repertoriomusicalafest2025/"
   },
 
   "areas": [
@@ -116,3 +116,4 @@
     ]
   }
 }
+
